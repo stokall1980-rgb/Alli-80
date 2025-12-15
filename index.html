@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Starting Business Marketing | Hewan & Tanaman</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HALAMAN LOGIN ================= -->
+<div id="loginPage">
+  <div class="login-card">
+    <h1>Starting Business Marketing</h1>
+    <p>Digital Marketing Hewan & Tanaman</p>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- ================= WEBSITE UTAMA ================= -->
+<div id="website" style="display:none;">
+
+<header>
+  <h2>Marketplace Hewan & Tanaman</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<section class="hero">
+  <h1>Solusi Digital Marketing Hewan & Tanaman</h1>
+  <p>Modern • Aman • Terpercaya</p>
+</section>
+
+<div class="filter">
+  <button onclick="filterProduct('all')">Semua</button>
+  <button onclick="filterProduct('hewan')">Hewan</button>
+  <button onclick="filterProduct('tanaman')">Tanaman</button>
+</div>
+
+<!-- Tombol Lihat Keranjang -->
+<button class="view-cart" onclick="showCart()">🛒 Lihat Keranjang</button>
+
+<section class="products">
+<div class="grid">
+
+<!-- ================= HEWAN (20) ================= -->
+<div class="card hewan">
+  <img src="https://placekitten.com/400/400">
+  <h3>Kucing Persia</h3>
+  <p>Rp 4.500.000</p>
+  <button onclick="addToCart('Kucing Persia', 4500000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://placekitten.com/401/400">
+  <h3>Kucing Anggora</h3>
+  <p>Rp 3.800.000</p>
+  <button onclick="addToCart('Kucing Anggora', 3800000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://placedog.net/400/400">
+  <h3>Anjing Golden</h3>
+  <p>Rp 7.500.000</p>
+  <button onclick="addToCart('Anjing Golden', 7500000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://placedog.net/401/400">
+  <h3>Anjing Bulldog</h3>
+  <p>Rp 9.000.000</p>
+  <button onclick="addToCart('Anjing Bulldog', 9000000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://placedog.net/402/400">
+  <h3>Anjing Husky</h3>
+  <p>Rp 10.000.000</p>
+  <button onclick="addToCart('Anjing Husky', 10000000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/400/400/bird">
+  <h3>Lovebird</h3>
+  <p>Rp 450.000</p>
+  <button onclick="addToCart('Lovebird', 450000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/401/400/bird">
+  <h3>Kenari</h3>
+  <p>Rp 600.000</p>
+  <button onclick="addToCart('Kenari', 600000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/402/400/bird">
+  <h3>Murai Batu</h3>
+  <p>Rp 3.500.000</p>
+  <button onclick="addToCart('Murai Batu', 3500000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/400/400/fish">
+  <h3>Ikan Koi</h3>
+  <p>Rp 1.200.000</p>
+  <button onclick="addToCart('Ikan Koi', 1200000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/401/400/fish">
+  <h3>Ikan Cupang</h3>
+  <p>Rp 150.000</p>
+  <button onclick="addToCart('Ikan Cupang', 150000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/402/400/fish">
+  <h3>Ikan Arwana</h3>
+  <p>Rp 8.000.000</p>
+  <button onclick="addToCart('Ikan Arwana', 8000000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/400/400/rabbit">
+  <h3>Kelinci Anggora</h3>
+  <p>Rp 900.000</p>
+  <button onclick="addToCart('Kelinci Anggora', 900000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/401/400/hamster">
+  <h3>Hamster Syrian</h3>
+  <p>Rp 350.000</p>
+  <button onclick="addToCart('Hamster Syrian', 350000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/402/400/iguana">
+  <h3>Iguana Hijau</h3>
+  <p>Rp 2.500.000</p>
+  <button onclick="addToCart('Iguana Hijau', 2500000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/403/400/turtle">
+  <h3>Kura-kura Brazil</h3>
+  <p>Rp 400.000</p>
+  <button onclick="addToCart('Kura-kura Brazil', 400000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/404/400/snake">
+  <h3>Ball Python</h3>
+  <p>Rp 5.500.000</p>
+  <button onclick="addToCart('Ball Python', 5500000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/405/400/lizard">
+  <h3>Leopard Gecko</h3>
+  <p>Rp 2.200.000</p>
+  <button onclick="addToCart('Leopard Gecko', 2200000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/406/400/duck">
+  <h3>Bebek Hias</h3>
+  <p>Rp 650.000</p>
+  <button onclick="addToCart('Bebek Hias', 650000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/407/400/chicken">
+  <h3>Ayam Hias</h3>
+  <p>Rp 850.000</p>
+  <button onclick="addToCart('Ayam Hias', 850000)">Tambah ke Keranjang</button>
+</div>
+<div class="card hewan">
+  <img src="https://loremflickr.com/408/400/hedgehog">
+  <h3>Landak Mini</h3>
+  <p>Rp 1.800.000</p>
+  <button onclick="addToCart('Landak Mini', 1800000)">Tambah ke Keranjang</button>
+</div>
+
+<!-- ================= TANAMAN (20) ================= -->
+<div class="card tanaman"><img src="https://loremflickr.com/400/400/plant"><h3>Monstera</h3><p>Rp 350.000</p><button onclick="addToCart('Monstera',350000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/401/400/plant"><h3>Aglonema</h3><p>Rp 250.000</p><button onclick="addToCart('Aglonema',250000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/402/400/plant"><h3>Anggrek Bulan</h3><p>Rp 400.000</p><button onclick="addToCart('Anggrek Bulan',400000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/403/400/plant"><h3>Bonsai</h3><p>Rp 1.500.000</p><button onclick="addToCart('Bonsai',1500000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/404/400/plant"><h3>Kaktus Mini</h3><p>Rp 80.000</p><button onclick="addToCart('Kaktus Mini',80000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/405/400/plant"><h3>Sukulen</h3><p>Rp 70.000</p><button onclick="addToCart('Sukulen',70000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/406/400/plant"><h3>Lidah Mertua</h3><p>Rp 120.000</p><button onclick="addToCart('Lidah Mertua',120000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/407/400/plant"><h3>Sirih Gading</h3><p>Rp 90.000</p><button onclick="addToCart('Sirih Gading',90000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/408/400/plant"><h3>Lavender</h3><p>Rp 150.000</p><button onclick="addToCart('Lavender',150000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/409/400/plant"><h3>Mawar</h3><p>Rp 180.000</p><button onclick="addToCart('Mawar',180000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/410/400/plant"><h3>Melati</h3><p>Rp 100.000</p><button onclick="addToCart('Melati',100000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/411/400/plant"><h3>Palem Kuning</h3><p>Rp 450.000</p><button onclick="addToCart('Palem Kuning',450000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/412/400/plant"><h3>Caladium</h3><p>Rp 275.000</p><button onclick="addToCart('Caladium',275000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/413/400/plant"><h3>Pucuk Merah</h3><p>Rp 200.000</p><button onclick="addToCart('Pucuk Merah',200000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/414/400/plant"><h3>Pandan Bali</h3><p>Rp 200.000</p><button onclick="addToCart('Pandan Bali',200000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/415/400/plant"><h3>Mint</h3><p>Rp 90.000</p><button onclick="addToCart('Mint',90000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/416/400/plant"><h3>Basil</h3><p>Rp 85.000</p><button onclick="addToCart('Basil',85000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/417/400/plant"><h3>Pakis</h3><p>Rp 130.000</p><button onclick="addToCart('Pakis',130000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/418/400/plant"><h3>Serai</h3><p>Rp 75.000</p><button onclick="addToCart('Serai',75000)">Tambah ke Keranjang</button></div>
+<div class="card tanaman"><img src="https://loremflickr.com/419/400/plant"><h3>Jahe</h3><p>Rp 90.000</p><button onclick="addToCart('Jahe',90000)">Tambah ke Keranjang</button></div>
+
+</div>
+</section>
+
+<!-- ================= POPUP KERANJANG ================= -->
+<div id="cartPopup" style="display:none;">
+  <h2>Keranjang Belanja</h2>
+  <div id="cartItems"></div>
+  <p id="totalPrice">Total: Rp 0</p>
+  <button onclick="closeCart()">Tutup</button>
+</div>
+
+<footer>
+  <p>© 2025 Starting Business Marketing</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
